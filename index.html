@@ -1,46 +1,239 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Eventually by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thannushree Durairaj | Visual Development Artist</title>
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Thannushree Durairaj</h1>
-				<p>Visual Development Artist | Concept Artist | Freelancer</p>
-			</header>
+  <style>
+    :root {
+      --bg-main: #0f1f17;
+      --bg-secondary: #162b21;
+      --accent: #7fa68a;
+      --text-main: #e6efe9;
+      --text-muted: #b8c9bf;
+      --card-bg: #1f3a2c;
+    }
 
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+    section {
+      padding: 4rem 10%;
+    }
 
-	</body>
+    h1, h2, h3 {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
 
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      max-width: 800px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .hero span {
+      color: var(--accent);
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background-color: var(--accent);
+      color: #0f1f17;
+      border-radius: 30px;
+      font-weight: 500;
+      width: fit-content;
+    }
+
+    /* SECTIONS */
+    .section-bg {
+      background-color: var(--bg-secondary);
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+
+    /* CONTACT */
+    .contact-links a {
+      display: inline-block;
+      margin-right: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      background-color: #0b1812;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      section {
+        padding: 3rem 6%;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hi, I’m <span>Thannushree Durairaj</span></h1>
+    <p>
+      Visual Development Artist · Concept Artist · Freelancer  
+      <br />
+      Building visual stories through art, design, and creative exploration.
+    </p>
+    <a href="#portfolio" class="cta">View Portfolio</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section-bg">
+    <h2>About Me</h2>
+    <p>
+      I’m a recent B.Sc. Animation graduate from Manipal Academy of Higher Education (2025) with a strong foundation in 3D modeling and visual development.  
+      I have completed two internships in VFX and game studios and actively freelance in graphic design and branding.
+    </p>
+    <p>
+      My interests lie in game character concept art, environment assets, and overall visual development.  
+      I aspire to work as a Visual Concept Developer and eventually build my own creative business.
+    </p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Selected areas of work from internships, freelance projects, and personal exploration.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Concept Art</h3>
+        <p>Character concepts and visual development explorations for games and storytelling.</p>
+      </div>
+      <div class="card">
+        <h3>3D Modeling</h3>
+        <p>Game-ready and cinematic assets created during internships and academic projects.</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Design & Branding</h3>
+        <p>Brand guidelines, social media templates, and visual identities for global clients.</p>
+      </div>
+      <div class="card">
+        <h3>Freelance Work</h3>
+        <p>Wedding graphic design, branding work, and creative assets for small businesses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section-bg">
+    <h2>Services</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Concept Art</h3>
+        <p>Character and visual development for games and creative projects.</p>
+      </div>
+      <div class="card">
+        <h3>Branding & Graphic Design</h3>
+        <p>Visual identity systems, templates, and creative assets.</p>
+      </div>
+      <div class="card">
+        <h3>Planner Management</h3>
+        <p>Creative planning systems for productivity and life organization.</p>
+      </div>
+      <div class="card">
+        <h3>Bullet Journal Planning</h3>
+        <p>Custom bullet journal spreads designed for clarity and growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section>
+    <h2>Blog</h2>
+    <p>
+      I share thoughts on creativity, learning, visual development, productivity, and my journey as a creative professional.
+    </p>
+    <p><em>Articles coming soon.</em></p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section-bg">
+    <h2>Contact</h2>
+    <p>Let’s connect for collaborations, freelance work, or creative conversations.</p>
+
+    <div class="contact-links">
+      <a href="mailto:yourmail@example.com">Email</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Behance / ArtStation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Thannushree Durairaj · Built with care 🌿
+  </footer>
+
+</body>
 </html>
